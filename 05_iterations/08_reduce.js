@@ -6,6 +6,13 @@ const myNum = [1, 2, 3];
     return accumulator + currentValue
 }, 0); */
 
+// reduce
+let totalSum = 0;
+for (let index = 0; index < myNum.length; index++) {
+  totalSum += myNum[index];
+}
+console.log(totalSum);
+
 //reduce using arrow function
 const myTotal = myNum.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
@@ -18,20 +25,20 @@ console.log(myTotal);
 const shoppingCart = [
   {
     itemName: "js course",
-    price: 2999
+    price: 2999,
   },
   {
     itemName: "py course",
-    price: 999
+    price: 999,
   },
   {
     itemName: "mobile dev course",
-    price: 5999
+    price: 5999,
   },
   {
     itemName: "data science course",
-    price: 12999
-  }
+    price: 12999,
+  },
 ];
 
 //scenario: add the price in the shopping card
